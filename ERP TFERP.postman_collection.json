@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "4a22da2d-c0e8-49f4-baa8-588a87ec066a",
+		"name": "ERP TFERP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45982118"
+	},
+	"item": [
+		{
+			"name": "paperworks",
+			"item": [
+				{
+					"name": "alta tramite",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"3\",\r\n    \"name\" : \"Reposicion de Placas Estatales\",\r\n    \"description\" : \"opcion Reposicion de Placas Estatales\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/paperworks",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"paperworks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "consulta de catalogo de tramites",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/paperworks",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"paperworks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Full path paperwork",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pathMapping\":\"paperworks\",\r\n    \"entityName\" : \"paperwork\",\r\n    \"columns\": [{\r\n        \"columnName\" : \"id\",\r\n        \"dataType\": \"INT\",\r\n        \"primaryKey\": \"true\"\r\n    },\r\n    {\r\n        \"columnName\" : \"name\",\r\n        \"dataType\": \"STRING\",\r\n        \"primaryKey\": \"false\"\r\n    },\r\n    {\r\n        \"columnName\" : \"description\",\r\n        \"dataType\": \"STRING\",\r\n        \"primaryKey\": \"false\"\r\n    },\r\n    {\r\n        \"columnName\" : \"creationDate\",\r\n        \"dataType\": \"STRING\",\r\n        \"primaryKey\": \"false\"\r\n    }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/quick/template/full-path",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"quick",
+								"template",
+								"full-path"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "logbook",
+			"item": [
+				{
+					"name": "full path logbook",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pathMapping\":\"paperworks\",\r\n    \"entityName\" : \"paperwork\",\r\n    \"columns\": [{\r\n        \"columnName\" : \"id\",\r\n        \"dataType\": \"INT\",\r\n        \"primaryKey\": \"true\"\r\n    },\r\n    {\r\n        \"columnName\" : \"name\",\r\n        \"dataType\": \"STRING\",\r\n        \"primaryKey\": \"false\"\r\n    },\r\n    {\r\n        \"columnName\" : \"description\",\r\n        \"dataType\": \"STRING\",\r\n        \"primaryKey\": \"false\"\r\n    },\r\n    {\r\n        \"columnName\" : \"creationDate\",\r\n        \"dataType\": \"STRING\",\r\n        \"primaryKey\": \"false\"\r\n    }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/quick/template/full-path",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"quick",
+								"template",
+								"full-path"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registro bitacora tramite",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"3\",\r\n    \"name\" : \"Reposicion de Placas Estatales\",\r\n    \"description\" : \"opcion Reposicion de Placas Estatales\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/paperworks",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"paperworks"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
